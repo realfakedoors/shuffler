@@ -1,0 +1,52 @@
+.intro-screen {
+  position: relative;
+  top: 30vh;
+  max-width: 100vw;
+}
+.intro-screen .title,
+.intro-screen .options {
+  display: flex;
+  justify-content: center;
+}
+.intro-screen .title {
+  align-items: center;
+}
+.intro-screen .title .dog-logo {
+  height: 115px;
+  width: 115px;
+  margin-right: 12px;
+}
+.intro-screen .title .title-text {
+  font-size: 76px;
+}
+.intro-screen .options {
+  margin: 16px auto 0;
+  max-width: 500px;
+}
+.intro-screen .options .option {
+  padding: 0px 8px;
+  border-left: 2px solid #808080;
+  width: 100%;
+  text-align: center;
+}
+.intro-screen .options .option .description {
+  word-wrap: break-word;
+  margin-top: 16px;
+  line-height: 28px;
+  padding: 0px 4px;
+}
+.intro-screen .options :first-child {
+  border-left: none;
+}
+
+@media only screen and (max-width: 400px) {
+  .intro-screen .title .dog-logo {
+    height: 50px;
+    width: 50px;
+  }
+  .intro-screen .title .title-text {
+    font-size: 30px;
+  }
+}
+
+/*# sourceMappingURL=IntroScreen.css.map */

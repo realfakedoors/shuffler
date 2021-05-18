@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Farro:wght@700&display=swap");
+.app-container {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #1e1f1e;
+  color: white;
+  font-family: "Farro", sans-serif;
+  font-size: 22px;
+}
+
+/*# sourceMappingURL=App.css.map */
