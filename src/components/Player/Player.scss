@@ -1,0 +1,13 @@
+.player {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	.dog {
+		margin-top: -22px;
+		border: 2px solid #faa300;
+		border-radius: 100%;
+
+		background-color: #97ead2;
+	}
+}

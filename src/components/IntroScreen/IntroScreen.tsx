@@ -2,7 +2,6 @@ import { FC, Dispatch, SetStateAction } from "react";
 
 import Button from "../Button/Button";
 
-import dogLogo from "../../assets/dog_images/dog9.svg";
 import "./IntroScreen.css";
 
 interface Props {
@@ -11,16 +10,17 @@ interface Props {
 			show: string;
 		}>
 	>;
+	logo: string;
 }
 
-const IntroScreen: FC<Props> = ({ setDisplay }) => {
+const IntroScreen: FC<Props> = ({ setDisplay, logo }) => {
 	return (
 		<div className="intro-screen">
-			<div className="title">
-				<img className="dog-logo" src={dogLogo} alt="Dog Logo" />
+			<section className="title">
+				<img className="dog-logo" src={logo} alt="Dog Logo" />
 				<h1 className="title-text">{"Dogs Playing Cards"}</h1>
-			</div>
-			<div className="options">
+			</section>
+			<section className="options">
 				<span className="option">
 					<Button
 						buttonText={"Pick A Card"}
@@ -41,7 +41,7 @@ const IntroScreen: FC<Props> = ({ setDisplay }) => {
 						{"A random hand of cards with up to 8 players."}
 					</p>
 				</span>
-			</div>
+			</section>
 		</div>
 	);
 };

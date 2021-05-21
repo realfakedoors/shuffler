@@ -1,0 +1,64 @@
+.hand-generator {
+	.dogs-with-cards {
+		height: 74vh;
+		max-width: 600px;
+		margin: 0 auto;
+		padding-top: 40px;
+
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		flex-direction: row-reverse;
+		align-content: flex-end;
+		.player {
+			width: 50%;
+			margin-bottom: 20px;
+			.hand {
+				display: flex;
+				.card-container {
+					width: 90px;
+					height: 75px;
+					margin-left: -67px;
+				}
+				.card-container:first-of-type {
+					margin-left: 0px;
+				}
+			}
+			.dog {
+				width: 110px;
+			}
+		}
+	}
+
+	.controls {
+		position: absolute;
+		bottom: 15vh;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		max-width: 500px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.hand-generator {
+		.dogs-with-cards {
+			.player {
+				.hand {
+					.card-container {
+						width: 42px;
+						height: 75px;
+						margin-left: -20px;
+					}
+				}
+				.dog {
+					width: 80px;
+				}
+			}
+		}
+		.controls {
+			font-size: 16px;
+			bottom: 10vh;
+		}
+	}
+}

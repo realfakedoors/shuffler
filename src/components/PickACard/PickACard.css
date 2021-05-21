@@ -1,3 +1,16 @@
-
+.pick-a-card {
+  margin-top: 20vh;
+  margin-bottom: 45px;
+}
+.pick-a-card .player {
+  margin-bottom: 36px;
+}
+.pick-a-card .player .card {
+  width: 120px;
+}
+.pick-a-card .player .dog {
+  width: 140px;
+  margin-top: -26px;
+}
 
 /*# sourceMappingURL=PickACard.css.map */

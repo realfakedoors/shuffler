@@ -1,3 +1,54 @@
+.hand-generator .dogs-with-cards {
+  height: 74vh;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row-reverse;
+  align-content: flex-end;
+}
+.hand-generator .dogs-with-cards .player {
+  width: 50%;
+  margin-bottom: 20px;
+}
+.hand-generator .dogs-with-cards .player .hand {
+  display: flex;
+}
+.hand-generator .dogs-with-cards .player .hand .card-container {
+  width: 90px;
+  height: 75px;
+  margin-left: -67px;
+}
+.hand-generator .dogs-with-cards .player .hand .card-container:first-of-type {
+  margin-left: 0px;
+}
+.hand-generator .dogs-with-cards .player .dog {
+  width: 110px;
+}
+.hand-generator .controls {
+  position: absolute;
+  bottom: 15vh;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-width: 500px;
+}
 
+@media only screen and (max-width: 400px) {
+  .hand-generator .dogs-with-cards .player .hand .card-container {
+    width: 42px;
+    height: 75px;
+    margin-left: -20px;
+  }
+  .hand-generator .dogs-with-cards .player .dog {
+    width: 80px;
+  }
+  .hand-generator .controls {
+    font-size: 16px;
+    bottom: 10vh;
+  }
+}
 
 /*# sourceMappingURL=HandGenerator.css.map */

@@ -4,6 +4,7 @@ import IntroScreen from "./components/IntroScreen/IntroScreen";
 import PickACard from "./components/PickACard/PickACard";
 import HandGenerator from "./components/HandGenerator/HandGenerator";
 
+import dogLogo from "./assets/dog_images/dog9.svg";
 import allCards from "./assets/allCards";
 import allDogs from "./assets/allDogs";
 import "./assets/reset.css";
@@ -11,13 +12,13 @@ import "./assets/App.css";
 
 const App: FC = () => {
 	const [display, setDisplay] = useState<{ show: string }>({
-		show: "pick-a-card",
+		show: "intro-screen",
 	});
 
-	const showDisplay = () => {
+	const currentDisplay = () => {
 		switch (display.show) {
 			case "intro-screen":
-				return <IntroScreen setDisplay={setDisplay} />;
+				return <IntroScreen setDisplay={setDisplay} logo={dogLogo} />;
 			case "pick-a-card":
 				return (
 					<PickACard
@@ -39,7 +40,7 @@ const App: FC = () => {
 		}
 	};
 
-	return <div className="app-container">{showDisplay()}</div>;
+	return <div className="app-container">{currentDisplay()}</div>;
 };
 
 export default App;
